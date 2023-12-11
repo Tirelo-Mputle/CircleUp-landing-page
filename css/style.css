@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    color: rgb(50, 50, 50)
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9rem 3%;
+  align-items: center;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.navlist{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+#logo{
+    font-weight: 900;
+    font-size: 1.2rem
+}

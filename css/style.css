@@ -9,7 +9,7 @@ body {
 }
 header {
   height: 100vh;
-  min-width: 100vw;
+  
 }
 nav {
   display: flex;
@@ -84,29 +84,48 @@ nav {
 }
 /* ABOUT SECTION */
 .section {
-    padding: 10% 10%;
-  }
-  /* ABOUT */
-  .section-head-container {
-    text-align: center;
-  }
-  .section-heading{
-      font-size: 2rem;
-      font-weight: 900;
-      margin-bottom: 2rem;
-  }
-.section-subheading{
-    font-size: 0.9rem;
+  padding: 10% 10%;
 }
-.about-image{
-    text-align: center;
+/* ABOUT */
+.section-head-container {
+  text-align: center;
 }
-  #about-phone-image{
-    width: 15rem;
-    margin: 2rem 0;
-    text-align: center;
-   
-  }
+.section-heading {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  text-align: center;
+}
+#about-phone-image {
+  width: 15rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.section-subheading {
+  margin-bottom: 2rem;
+}
+.section-subheading .section p {
+  font-size: 0.9rem;
+}
+.text-item-container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 2rem 5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.text-item-container h3 {
+  margin-bottom: 0.7rem;
+}
+.fa-circle-check {
+  position: absolute;
+  top: 1.7rem;
+  left: 1.5rem;
+  font-size: 2rem;
+  color: rgb(152, 152, 232);
+}
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
   .hero {
@@ -116,11 +135,9 @@ nav {
   }
   .hero-text {
     width: 50%;
-   
   }
   #hero-description {
     font-size: 1.2rem;
-   
   }
   .hero-image {
     justify-self: end;
@@ -129,16 +146,46 @@ nav {
   .mobile-image {
     display: block;
     /* max-height: 60%; */
-    width: 70%;
+    width: 60%;
   }
-  .section-subheading{
+  /* SECTIONS */
+  .section-subheading {
     width: 80%;
     margin: 0 auto;
     line-height: 1.7rem;
+    font-size: 1rem;
+  }
+  .section p {
+    font-size: 1rem;
+  }
+  /* ABOUT */
+  .about-details {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+  }
+  .text-item-container {
+    padding: 1rem 0rem 1rem 3rem;
+    font-size: 0.9rem;
+    max-width: 35rem;
+  }
+  .fa-circle-check {
+    position: absolute;
+    top: 1.1rem;
+    left: 0.9rem;
     font-size: 1.2rem;
+    color: rgb(152, 152, 232);
+  }
+  #about-phone-image {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1024px) {
+  .section-subheading {
+    width: 60%;
+  }
   .hero-text .bold {
     font-size: 2.4rem;
   }
@@ -150,4 +197,3 @@ nav {
     font-size: 1.1rem;
   }
 }
-

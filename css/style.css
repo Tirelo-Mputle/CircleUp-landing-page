@@ -95,8 +95,17 @@ nav {
       font-weight: 900;
       margin-bottom: 2rem;
   }
+.section-subheading{
+    font-size: 0.9rem;
+}
+.about-image{
+    text-align: center;
+}
   #about-phone-image{
-    width: 70%;
+    width: 15rem;
+    margin: 2rem 0;
+    text-align: center;
+   
   }
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
@@ -107,6 +116,11 @@ nav {
   }
   .hero-text {
     width: 50%;
+   
+  }
+  #hero-description {
+    font-size: 1.2rem;
+   
   }
   .hero-image {
     justify-self: end;
@@ -121,6 +135,7 @@ nav {
     width: 80%;
     margin: 0 auto;
     line-height: 1.7rem;
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1024px) {
